@@ -4,12 +4,11 @@ import "./index.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { IntlProvider, addLocaleData } from "react-intl";
-import locale_en from "react-intl/locale-data/en";
 import locale_de from "react-intl/locale-data/de";
 import messages_de from "./translations/de.json";
 import messages_en from "./translations/en.json";
 
-addLocaleData([...locale_en, ...locale_de]);
+addLocaleData([...locale_de]);
 const messages = {
   de: messages_de,
   en: messages_en
